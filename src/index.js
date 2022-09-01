@@ -1,7 +1,7 @@
 const { Telegraf } = require('telegraf')
 const { hears }  = require('./utils')
 const bot = new Telegraf("5430080139:AAGdysDHjcI3m-zxX8qf--6wALnd36DUepY");
-const DT_CHAT_ID = -1001629065520 ;
+const DT_CHAT_ID = 519052707  ;
 //-1001629065520 519052707
 const commands  = require('./commands')
 

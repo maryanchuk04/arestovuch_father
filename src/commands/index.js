@@ -1,4 +1,4 @@
 const  schedule  = require('./schedule')
 const status = require('./status')
-
-module.exports ={ schedule, status }; 
+const films = require('./films');
+module.exports ={ schedule, status, films }; 
