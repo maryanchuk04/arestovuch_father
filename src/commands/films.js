@@ -50,7 +50,9 @@ function init(bot){
             responce.forEach(element => {
                 str += `\nФільм: ${element.name}\nКількість годин: ${element.hoursviewed}\n\n`
             });
-            ctx.reply(str);
+            ctx.reply(str).then((err)=>{
+                console.log(err);
+            });
         }else{
             console.log(res);
         }
