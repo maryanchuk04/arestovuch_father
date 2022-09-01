@@ -55,5 +55,42 @@ const schedule = [
     }
 ]
 
+const usersInfo = [
+    {
+        name : "Макс",
+        surname : "Мар`янчук",
+        birthday : "01.01.2004",
+        language : ".NET, ReactJS",
+        key : "Maks_Maryanchuk"
+    },
+    {
+        name : "Сергій",
+        surname : "Дворянніков",
+        birthday : "27.06.2003",
+        language : "ReactJS, NodeJS",
+        key : "serhiy_dvoryannikov"
+    },
+    {
+        name : "Варвара-Марія",
+        surname : "Гончарюк",
+        birthday : "29.08.2002",
+        language : "ReactJS",
+        key : "varya_2908"
+    },
+    {
+        name : "Вова",
+        surname : "Романюк",
+        birthday : "15.04.2003",
+        language : "ReactJS, NodeJs",
+        key : "thermk"
+    },
+    {
+        name : "Назар",
+        surname : "Лакуста",
+        birthday : "17.10.2003",
+        language : "Java",
+        key : "nazarko1703"
+    }
+]
 
-module.exports = { hears, schedule };
+module.exports = { hears, schedule, usersInfo };
