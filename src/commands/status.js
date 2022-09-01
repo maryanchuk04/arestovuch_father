@@ -64,8 +64,6 @@ async function getUserPhoto(ctx){
         console.log(file_id);
         var file = ctx.telegram.getFile(file_id);
         return file_id;
-    }).then((err)=>{
-        console.log(err);
     })
 
     return userImage;
