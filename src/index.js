@@ -74,10 +74,10 @@ function scheduleLessons(lessons){
 
 
     //for Testing
-    cron.schedule("10 10 * * 1-7",()=>{
-       let obj = lessons.find(x=>x.hours == 10 && x.minute == 0);
-       bot.telegram.sendMessage(DT_CHAT_ID, prettyLessonNotification( obj));
-    })
+    // cron.schedule("10 10 * * 1-7",()=>{
+    //    let obj = lessons.find(x=>x.hours == 10 && x.minute == 0);
+    //    bot.telegram.sendMessage(DT_CHAT_ID, prettyLessonNotification( obj));
+    // })
 }
 
     scheduleInfo.forEach((day)=>{
@@ -114,5 +114,12 @@ function scheduleLessons(lessons){
                 break;
         }
     })
+
+
+cron.schedule("0 7 * * *", () => {
+    bot.telegram.sendPhoto("https://st.depositphotos.com/1491329/2998/i/950/depositphotos_29984561-stock-photo-rooster-and-chickens-free-range.jpg",{
+        caption: "Доброго ранку всім\nБажаю щэстя, здоров'я..."
+    });
+})
 
 bot.launch();
