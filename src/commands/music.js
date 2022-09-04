@@ -66,9 +66,7 @@ function init(bot){
                     }
                   )
                 
-            }
-            
-            
+            }     
         }
     })
 
