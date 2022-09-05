@@ -5,8 +5,8 @@ const cron = require('node-cron');
 const DT_CHAT_ID = -1001629065520;
 //-1001629065520 519052707 
 const commands  = require('./commands')
-const date = new Date().toLocaleString();
-
+const date = new Date().getDay();
+console.log(date)
 function registerCommands(bot, commands) {
     Object.values(commands).forEach((cmd) => cmd.init(bot));
 }
@@ -92,37 +92,51 @@ function scheduleLessons(lessons){
     scheduleInfo.forEach((day)=>{
         switch (day.keyDay) {
             case 1:{
-                scheduleLessons(day.lessons);
+                if(date == day.keyDay){
+                    scheduleLessons(day.lessons)
+                }
                 break;
             }
             case 2:{
-                scheduleLessons(day.lessons);
+                if(date == day.keyDay){
+                    scheduleLessons(day.lessons)
+                }
                 break;
             }
             case 3:{
-                scheduleLessons(day.lessons);
+                if(date == day.keyDay){
+                    scheduleLessons(day.lessons)
+                }
                 break;
             }
             case 4:{
-                scheduleLessons(day.lessons);
+                if(date == day.keyDay){
+                    scheduleLessons(day.lessons)
+                }
                 break;
             }
             case 5:{
-                scheduleLessons(day.lessons);
+                if(date == day.keyDay){
+                    scheduleLessons(day.lessons)
+                }
                 break;
             }
             case 6:{
-                scheduleLessons(day.lessons);
+                if(date == day.keyDay){
+                    scheduleLessons(day.lessons)
+                }
                 break;
             }
             case 7:{
-                scheduleLessons(day.lessons);
+                if(date == day.keyDay){
+                    scheduleLessons(day.lessons)
+                }
                 break;
             }
             default:
                 break;
         }
-        break;
+        
     })
 
 
