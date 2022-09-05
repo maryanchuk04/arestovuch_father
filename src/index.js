@@ -61,15 +61,24 @@ function scheduleLessons(lessons){
     cron.schedule("10 8 * * 1-6",()=>{
        let obj = lessons.find(x=>x.hours == 8 && x.minute == 20);
        bot.telegram.sendMessage(DT_CHAT_ID, prettyLessonNotification( obj));
+    },{
+        scheduled: true,
+        timezone: "Europe/Kiev"
     })
     cron.schedule("40 9 * * 1-6",()=>{
         let obj = lessons.find(x=>x.hours == 9 && x.minute == 50);
         bot.telegram.sendMessage(DT_CHAT_ID, prettyLessonNotification( obj));
+    },{
+        scheduled: true,
+        timezone: "Europe/Kiev"
     })
 
     cron.schedule("30 11 * * 1-6",()=>{
         let obj = lessons.find(x=>x.hours == 11 && x.minute == 30);
         bot.telegram.sendMessage(DT_CHAT_ID, prettyLessonNotification( obj));
+    },{
+        scheduled: true,
+        timezone: "Europe/Kiev"
     })
 
 
