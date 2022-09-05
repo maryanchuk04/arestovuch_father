@@ -125,7 +125,7 @@ function scheduleLessons(lessons){
     })
 
 
-cron.schedule("0 8 * * *", () => {
+cron.schedule("44 17 * * *", () => {
     bot.telegram.sendPhoto(DT_CHAT_ID,"https://st.depositphotos.com/1491329/2998/i/950/depositphotos_29984561-stock-photo-rooster-and-chickens-free-range.jpg",{
         caption: "Доброго ранку всім\nБажаю щэстя, здоров'я..."
     });
