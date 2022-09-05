@@ -37,27 +37,27 @@ const hears = [
 const schedule = [
     {
         day : 'monday',
-        shcedule : 'https://i.ibb.co/XJWwdt6/photo-2022-09-01-09-10-56.jpg',
+        shcedule : 'https://i.ibb.co/QHkRPpJ/monday.jpg',
         level : "нууу можна жити"
     },
     {
         day : "tuesday",
-        shcedule : "https://i.ibb.co/C5R8Bz6/photo-2022-09-01-09-11-11.jpg",
+        shcedule : "https://i.ibb.co/qYXBQ69/tuesday.jpg",
         level : "хуху а тут АО..."
     },
     {
         day : "wednesday",
-        shcedule : "https://i.ibb.co/KD4x5pP/photo-2022-09-01-09-11-18.jpg",
+        shcedule : "https://i.ibb.co/mtX9Dgb/wednesday.jpg",
         level : "жостко, шепетюк дороу"
     },
     {
         day : "thursday",
-        shcedule : "https://i.ibb.co/2YWssnG/photo-2022-09-01-09-11-27.jpg",
+        shcedule : "https://i.ibb.co/mhybDrW/thursday.jpg",
         level : "бігуновський кидановський"
     },
     {
         day : "friday",
-        shcedule : "https://i.ibb.co/R4djYsz/photo-2022-09-01-09-13-02.jpg",
+        shcedule : "https://i.ibb.co/Fh4XFyG/friday.jpg",
         level : "СОУ ізі..."
     }
 ]
