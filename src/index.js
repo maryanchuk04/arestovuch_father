@@ -125,10 +125,13 @@ function scheduleLessons(lessons){
     })
 
 
-cron.schedule("44 17 * * *", () => {
+cron.schedule("47 17 * * *", () => {
     bot.telegram.sendPhoto(DT_CHAT_ID,"https://st.depositphotos.com/1491329/2998/i/950/depositphotos_29984561-stock-photo-rooster-and-chickens-free-range.jpg",{
         caption: "Доброго ранку всім\nБажаю щэстя, здоров'я..."
     });
+},{
+    scheduled: true,
+    timezone: "Europe/Kiev"
 })
 
 bot.launch();
