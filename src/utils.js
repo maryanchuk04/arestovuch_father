@@ -47,7 +47,7 @@ const schedule = [
     },
     {
         day : "wednesday",
-        shcedule : "https://i.ibb.co/mtX9Dgb/wednesday.jpg",
+        shcedule : "https://i.ibb.co/JF3GW8m/wednesday.jpg",
         level : "жостко, шепетюк дороу"
     },
     {

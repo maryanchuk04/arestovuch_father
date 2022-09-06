@@ -58,8 +58,11 @@ function prettyLessonNotification(lesson){
 }
 
 function scheduleLessons(lessons){
+    console.log(lessons);
+
     cron.schedule("10 8 * * 1-6",()=>{
        let obj = lessons.find(x=>x.hours == 8 && x.minute == 20);
+       console.log(obj)
        bot.telegram.sendMessage(DT_CHAT_ID, prettyLessonNotification( obj));
     },{
         scheduled: true,
